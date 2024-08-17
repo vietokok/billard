@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://vietokok.github.io/billard",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
