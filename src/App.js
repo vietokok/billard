@@ -32,9 +32,10 @@ function getStyles(player, currentPlayers, theme) {
 
 const getPlayerGroups = (currentPlayers = []) => {
   const result = [];
-  const start = currentPlayers[0];
-  for (let i = 1; i < currentPlayers.length; i++) {
-    result.push(`${start}-${currentPlayers[i]}`);
+  for (let i = 0; i < currentPlayers.length - 1; i++) {
+    for (let j = i + 1; j < currentPlayers.length; j++) {
+      result.push(`${currentPlayers[i]}-${currentPlayers[j]}`);
+    }
   }
   return result;
 };
